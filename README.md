@@ -102,3 +102,54 @@ Based on the Stillinger-Weber (SW) Two-Body Potential.
 - Expand the simulation to 32 qubits and test CrN/Sc doping effects.
 
 This research provides a scalable quantum approach for advancing the discovery and optimization of next-generation piezoelectric materials.
+
+
+# PiezoQuantum APP
+
+This repository contains the code and resources for the PiezoQuantum APP, which involves simulations and computations related to piezoelectric materials using Python, Streamlit, and various scientific computing libraries.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+1. **Conda**: A package, dependency, and environment management system.
+2. **Python**: A programming language that lets you work quickly and integrate systems more effectively.
+
+## Installation
+
+### Step 1: Install Conda
+
+If you don't have Conda installed, you can download and install it from the [official Conda website](https://docs.conda.io/en/latest/miniconda.html).
+
+### Step 2: Create a Conda Environment
+
+Create a new Conda environment with Python 3.8 (or any compatible version):
+
+
+conda create -n piezoquantum python=3.8
+
+conda activate piezoquantum
+
+Install Required Packages
+Install the necessary Python packages using Conda and pip:
+
+- conda install -c conda-forge 
+- pip install streamlit pulser qutip
+
+Running the Programs
+Running the Streamlit Application
+To run the Streamlit application piezo_app_v4.py, navigate to the PiezoQuantum folder and execute the following command:
+
+streamlit run piezo_app_v4.py
+
+This will start a local web server and open the application in your default web browser. You can interact with the app through the browser interface.
+
+### Running Python Scripts
+To run the Python scripts pm_simulation_ain_compute_c33_e33_d33_8A.py, pm_simulation_ain_crn_compute_d33_v4.py, and pm_simulation_ain_two_three_body_coupling.py, use the following commands:
+
+- python pm_simulation_ain_compute_c33_e33_d33_8A.py
+- python pm_simulation_ain_crn_compute_d33_v4.py
+- python pm_simulation_ain_two_three_body_coupling.py
+
+
+Each script will execute its respective simulation or computation. Ensure that all dependencies are correctly installed and that the environment is activated before running these scripts.
